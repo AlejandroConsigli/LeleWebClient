@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">Welcome to Lele Web</h1>
+      <h1 className="title">Lele Web is Awesome</h1>
       <span className="subtitle">{data}</span>
     </div>
   );

@@ -1,10 +1,10 @@
 {
-  "short_name": "Lele Web",
-  "name": "Create Lele Web Sample",
+  "short_name": "Lele Web Greetings",
+  "name": "Create Lele Web Greetings Sample",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "144x144",
       "type": "image/x-icon"
     },
     {

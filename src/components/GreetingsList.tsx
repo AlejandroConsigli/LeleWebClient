@@ -82,7 +82,11 @@ const GreetingsList = () => {
               />
             </span>
           ))}
-          <div className="form">
+          <form
+            className="form"
+            onSubmit={updating ? handleUpdate : handleCreate}
+          >
+            <input type="submit" className="submit" />
             <input
               type="text"
               name="name"
@@ -106,7 +110,7 @@ const GreetingsList = () => {
             ) : (
               <CreateSvg className="create" onClick={handleCreate} />
             )}
-          </div>
+          </form>
         </div>
       )}
     </div>

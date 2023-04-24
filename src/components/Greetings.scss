@@ -21,6 +21,9 @@
       @extend %flex-center;
       flex-direction: column;
       padding: 10px;
+      .submit {
+        display: none;
+      }
       .name,
       .description {
         background-color: transparent;

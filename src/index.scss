@@ -1,0 +1,50 @@
+@font-face {
+  font-family: DynaPuff;
+  src: url("./fonts/DynaPuff-VariableFont_wdth\,wght.ttf");
+}
+
+$darkMainColor: #04081d;
+$lightMainColor: #d2daec;
+$mobile: "767px";
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font($size, $weight, $color, $align) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-align: $align;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: DynaPuff;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+:export {
+  darkMainColor: $darkMainColor;
+  lightMainColor: $lightMainColor;
+}

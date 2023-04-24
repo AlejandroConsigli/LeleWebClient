@@ -1,0 +1,59 @@
+@import "../index";
+
+.greetings {
+  .data {
+    @extend %flex-center;
+    flex-direction: column;
+    .list {
+      @extend %flex-center;
+      @include font(
+        $size: 20px,
+        $weight: 200,
+        $color: $lightMainColor,
+        $align: center
+      );
+      padding: 5px;
+      @media screen and (max-width: $mobile) {
+        font-size: 14px;
+      }
+    }
+    .form {
+      @extend %flex-center;
+      flex-direction: column;
+      padding: 10px;
+      .name,
+      .description {
+        background-color: transparent;
+        border: 1px solid $lightMainColor;
+        outline: none;
+        @include font(
+          $size: 18px,
+          $weight: 200,
+          $color: $lightMainColor,
+          $align: center
+        );
+        margin-bottom: 10px;
+        padding: 0 10px;
+        border-radius: 10px;
+        @media screen and (max-width: $mobile) {
+          font-size: 14px;
+        }
+      }
+    }
+    .create,
+    .update,
+    .delete {
+      width: 20px;
+      height: 20px;
+      padding-left: 10px;
+      cursor: pointer;
+      path {
+        fill: $lightMainColor;
+      }
+      @media screen and (max-width: $mobile) {
+        min-width: 20px;
+        min-height: 20px;
+      }
+    }
+  }
+}

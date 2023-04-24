@@ -1,0 +1,20 @@
+@import "index";
+
+.container {
+  @extend %flex-center;
+  flex: 1;
+  flex-direction: column;
+  background-color: $darkMainColor;
+  padding: 20px;
+  .title {
+    @include font(
+      $size: 50px,
+      $weight: 400,
+      $color: $lightMainColor,
+      $align: center
+    );
+    @media screen and (max-width: $mobile) {
+      font-size: 30px;
+    }
+  }
+}
